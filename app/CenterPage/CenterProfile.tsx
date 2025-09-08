@@ -301,7 +301,7 @@ const CenterProfile: React.FC = () => {
                     rows={4}
                   />
                 ) : (
-                  <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.description}</p>
+                  <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.description.replace(/"/g, "&quot;")}</p>
                 )}
               </div>
             </div>
