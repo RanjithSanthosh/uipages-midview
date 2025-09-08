@@ -25,7 +25,11 @@ interface HospitalData {
   notes: string;
 }
 
-const HospitalCenterDashboard: React.FC = () => {
+interface HospitalCenterDashboardProps {
+  handleViewStudy: () => void;
+}
+
+const HospitalCenterDashboard: React.FC<HospitalCenterDashboardProps> = ({ handleViewStudy }) => {
   const [selectedData, setSelectedData] = useState<HospitalData | null>(null);
   const [editMode, setEditMode] = useState(false);
 
