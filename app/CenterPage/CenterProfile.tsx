@@ -48,12 +48,12 @@ const CenterProfile: React.FC = () => {
     const files = event.target.files;
     if (files && files.length > 0) {
       setUploading(true);
-      const file = files;
+      const file = files[0];
       const reader = new FileReader();
-      reader.onload = (e: any) => {
+      reader.onload = (e: ProgressEvent<FileReader>) => {
         setTempProfile(prev => ({
           ...prev,
-          centerPicture: e.target.result
+          centerPicture: e.target && typeof e.target.result === 'string' ? e.target.result : prev.centerPicture
         }));
         setUploading(false);
       };

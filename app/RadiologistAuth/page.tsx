@@ -86,7 +86,7 @@ const RadiologistAuthPage: React.FC = () => {
             <div className="flex items-start space-x-4">
               <div className="flex-1">
                 <p className="text-gray-200 italic mb-4 text-lg leading-relaxed">
-                  "{testimonials[currentTestimonial].quote}"
+                  &quot;{testimonials[currentTestimonial].quote}&quot;
                 </p>
                 <div className="border-l-4 border-medical-yellow-300 pl-4">
                   <p className="font-semibold text-white text-lg">

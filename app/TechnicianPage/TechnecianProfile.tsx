@@ -617,10 +617,10 @@ const TechnicianProfile: React.FC = () => {
       const file = files[0];
       
       const reader = new FileReader();
-      reader.onload = (e: any) => {
+      reader.onload = (e: ProgressEvent<FileReader>) => {
         setTempProfile(prev => ({
           ...prev,
-          profilePicture: e.target.result
+          profilePicture: e.target && typeof e.target.result === 'string' ? e.target.result : prev.profilePicture
         }));
         setUploading(false);
       };

@@ -278,7 +278,7 @@ const HospitalAuthPage: React.FC = () => {
             </div>
             
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-amber-300 to-yellow-300 bg-clip-text text-transparent">
-              India's Digital Diagnostics Platform
+              India&apos;s Digital Diagnostics Platform
             </h1>
             
             <p className="text-lg text-gray-200 mb-8">
@@ -287,7 +287,7 @@ const HospitalAuthPage: React.FC = () => {
             
             <p className="text-gray-300 leading-relaxed">
               Fast, smooth, intuitive and supported by cutting-edge technology, 
-              CyberTechNinja's platform brings out the best in your hospital or diagnostic center, 
+              CyberTechNinja&apos;s platform brings out the best in your hospital or diagnostic center, 
               so you can deliver better care and faster results to your patients.
             </p>
           </div>
@@ -297,7 +297,7 @@ const HospitalAuthPage: React.FC = () => {
             <div className="flex items-start space-x-4">
               <div className="flex-1">
                 <p className="text-gray-200 italic mb-4 text-lg leading-relaxed">
-                  "{testimonials[currentTestimonial].quote}"
+                  &quot;{testimonials[currentTestimonial].quote}&quot;
                 </p>
                 <div className="border-l-4 border-amber-300 pl-4">
                   <p className="font-semibold text-white text-lg">
