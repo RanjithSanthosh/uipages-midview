@@ -106,7 +106,9 @@ const HospitalCenterDashboard: React.FC = () => {
   };
 
   const handleSave = () => {
-    setRecords(records.map(r => (r.id === selectedData.id ? selectedData : r)));
+    if (selectedData) {
+      setRecords(records.map(r => (r.id === selectedData.id ? selectedData : r)));
+    }
     setEditMode(false);
     setSelectedData(null);
   };
