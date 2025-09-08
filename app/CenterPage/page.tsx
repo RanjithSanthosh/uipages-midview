@@ -217,6 +217,7 @@ const CenterPage: React.FC = () => {
         return (
           <>
             <PageHeader
+              title="Assigned Studies"
               searchTerm={searchTerm}
               setSearchTerm={setSearchTerm}
               startDate={startDate}
@@ -247,7 +248,7 @@ const CenterPage: React.FC = () => {
               handleSearch={handleSearch}
               handleRefresh={handleRefresh}
             />
-            <CompletedStudiesTable />
+            <CompletedStudiesTable handleViewStudy={handleViewStudy} />
             <Legend />
           </>
         );
