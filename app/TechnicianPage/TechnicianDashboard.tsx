@@ -170,7 +170,7 @@ const TechnicianDashboard: React.FC = () => {
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Technician Dashboard</h1>
         <p className="text-gray-600">
-          Welcome back! Here's the overview of assignments and case statuses.
+          Welcome back! Here&apos;s the overview of assignments and case statuses.
         </p>
       </div>
 
@@ -326,7 +326,7 @@ const TechnicianDashboard: React.FC = () => {
                         <div className="text-center">
                           <FiImage className="w-12 h-12 text-gray-400 mx-auto mb-2" />
                           <p className="text-gray-500">No medical images uploaded yet</p>
-                          <p className="text-sm text-gray-400">Click "Upload Images" to add medical images</p>
+                          <p className="text-sm text-gray-400">Click &quot;Upload Images&quot; to add medical images</p>
                         </div>
                       </div>
                     ) : (
@@ -335,7 +335,7 @@ const TechnicianDashboard: React.FC = () => {
                           <div className="flex items-start space-x-3">
                             <img
                               src={image}
-                              alt={`Medical image ${index + 1}`}
+                              alt={`Medical image ${index + 1}`.replace(/"/g, "&quot;")}
                               className="w-24 h-24 object-cover rounded-lg border"
                             />
                             <div className="flex-1">

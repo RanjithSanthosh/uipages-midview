@@ -59,7 +59,7 @@ const DoctorDashboard: React.FC = () => {
     <div className="w-full p-6">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Doctor Dashboard</h1>
-        <p className="text-gray-600">Welcome back! Here's an overview of your cases.</p>
+  <p className="text-gray-600">Welcome back! Here&apos;s an overview of your cases.</p>
       </div>
 
       {/* Stats Cards */}
