@@ -141,7 +141,7 @@ const CenterProfile: React.FC = () => {
                   </>
                 )}
               </div>
-              <h2 className="text-xl font-bold text-gray-800">{profile.name}</h2>
+              <h2 className="text-xl font-bold text-gray-800">{profile.name.replace("'", "&apos;")}</h2>
               <p className="text-blue-600 font-medium">{profile.specialties}</p>
             </div>
 
@@ -156,7 +156,7 @@ const CenterProfile: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3 p-2 rounded-lg bg-gray-50">
                 <MapPin className="w-4 h-4 text-red-500" />
-                <span className="text-sm text-gray-700">{profile.address}</span>
+                <span className="text-sm text-gray-700">{profile.address.replace("'", "&apos;")}</span>
               </div>
               <div className="flex items-center space-x-3 p-2 rounded-lg bg-blue-50">
                 <Clock className="w-4 h-4 text-purple-500" />
@@ -196,7 +196,7 @@ const CenterProfile: React.FC = () => {
                       onChange={(e) => handleInputChange('name', e.target.value)}
                     />
                   ) : (
-                    <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.name}</p>
+                    <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.name.replace("'", "&apos;")}</p>
                   )}
                 </div>
                 <div>
@@ -248,7 +248,7 @@ const CenterProfile: React.FC = () => {
                       onChange={(e) => handleInputChange('address', e.target.value)}
                     />
                   ) : (
-                    <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.address}</p>
+                    <p className="text-gray-900 bg-gray-50 p-3 rounded-lg">{profile.address.replace("'", "&apos;")}</p>
                   )}
                 </div>
                 <div>
